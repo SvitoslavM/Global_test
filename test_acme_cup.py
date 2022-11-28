@@ -36,6 +36,7 @@ def test_change_total_cup(driver):
     open_future_page = page.open_futured_page()
     open_acme = open_future_page.open_acme_cup()
     get_total = open_acme.add_to_card_acme().change_total_amount()
+    """Used sleep because not work with time waiter's"""
     time.sleep(2)
     with allure.step('Test text after change amount *5 == 125$'):
         assert get_total.get_total_price_acme().text == '$125.00', "ERROR WRONG PRICE"
