@@ -1,5 +1,4 @@
 import time
-
 import allure
 from pages.main_page import MainPage
 
@@ -40,3 +39,4 @@ def test_change_total_cup(driver):
     time.sleep(2)
     with allure.step('Test text after change amount *5 == 125$'):
         assert get_total.get_total_price_acme().text == '$125.00', "ERROR WRONG PRICE"
+

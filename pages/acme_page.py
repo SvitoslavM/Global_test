@@ -32,6 +32,4 @@ class AcmePage(BasePage):
         change_total.click()
         change_total.click()
         change_total.click()
-        
-
         return AcmePage(self.driver)
