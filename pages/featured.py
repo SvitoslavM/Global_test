@@ -10,7 +10,7 @@ class FuturedPage(BasePage):
         super().__init__(driver, self.URL)
 
     def get_text_futured(self):
-        return self.find_element(FuturedPageLocators.CHECK_TEXT_FUTERED_LOCATOR)
+        return self.find_element(FuturedPageLocators.CHECK_TEXT_FUTURED_LOCATOR)
 
     def open_acme_cup(self):
         open_acme = self.find_element(FuturedPageLocators.ACME_CUP_LOCATOR)

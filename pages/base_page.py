@@ -11,7 +11,7 @@ class BasePage:
     def open(self):
         self.driver.get(self.url)
 
-    def find_element(self, locator, timeout=10):
+    def find_element(self, locator, timeout=15):
         try:
             element = WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located(
                 locator)
